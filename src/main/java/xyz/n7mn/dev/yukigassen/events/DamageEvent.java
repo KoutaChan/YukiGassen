@@ -2,7 +2,6 @@ package xyz.n7mn.dev.yukigassen.events;
 
 import org.bukkit.entity.EntityType;
 import org.bukkit.event.EventHandler;
-import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageEvent;
 import xyz.n7mn.dev.yukigassen.gamestate.GameState;

@@ -13,6 +13,7 @@ import xyz.n7mn.dev.yukigassen.gamestate.GameState;
 public class Start implements CommandExecutor {
 
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        GameState.setState(GameState.STARTING);
         new BukkitRunnable() {
             int timer = 10;
             @Override
