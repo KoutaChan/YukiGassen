@@ -10,13 +10,15 @@ public class BlockEvent implements Listener {
 
     @EventHandler
     public void PlaceEvent(BlockPlaceEvent event) {
-        if (event.getPlayer().getGameMode() == GameMode.CREATIVE) {
-        }else event.setCancelled(true);
+        if (event.getPlayer().getGameMode() != GameMode.CREATIVE) {
+            event.setCancelled(true);
+        }
     }
 
     @EventHandler
     public void BreakEvent(BlockBreakEvent event) {
-        if (event.getPlayer().getGameMode() == GameMode.CREATIVE) {
-        } else event.setCancelled(true);
+        if (event.getPlayer().getGameMode() != GameMode.CREATIVE) {
+            event.setCancelled(true);
+        }
     }
 }
