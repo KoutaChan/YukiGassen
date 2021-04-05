@@ -14,7 +14,7 @@ public final class YukiGassen extends JavaPlugin {
         saveDefaultConfig();
         getCommand("start").setExecutor(new Start());
         getServer().getPluginManager().registerEvents(new DamageEvent(), this);
-        getServer().getPluginManager().registerEvents(new BlockEvent(),this)
+        getServer().getPluginManager().registerEvents(new BlockEvent(),this);
         // Plugin startup logic
 
     }
